@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "id": "9cc48360-63bb-11ea-a7e5-33e5b4bf39de",
+  "version": "0.0.1",
+  "packageName": "teamsdevdemo",
+  "developer": {
+    "name": "Contoso Inc",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "Teams Tab Demo App",
+    "full": "Teams Tab Demo App"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{HOSTNAME}}/foodTruckFindrTab/config.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "sharePointPreviewImage": "https://{{HOSTNAME}}/assets/foodTruckFindrTab-preview.png",
+      "supportedSharePointHosts": [
+        "sharePointFullPage",
+        "sharePointWebPart"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ]
+}
