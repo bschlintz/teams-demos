@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tab-spfx-demo-client-side-solution",
+    "id": "efcb5e8b-90f4-4f47-9688-fce212e8d36d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      { "resource": "YoTeamsApp", "scope": "user_impersonation" }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tab-spfx-demo.sppkg"
+  }
+}
