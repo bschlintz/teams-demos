@@ -1,0 +1,33 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "medium",
+          "isSubtle": true,
+          "text": "Select a food truck to insert into the message:"
+        }
+      ]
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "foodTruckSelector",
+      "choices": []
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Insert selected food truck",
+      "data":
+      {
+        "submitLocation": "messagingExtensionFetchTask"
+      }
+    }
+  ]
+}

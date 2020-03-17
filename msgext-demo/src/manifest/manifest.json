@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "id": "566b8db0-67a7-11ea-865d-1f7e8cac431b",
+  "version": "0.1.0",
+  "packageName": "msgextdemo",
+  "developer": {
+    "name": "Contoso Inc",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "Food Truck Findr Extension",
+    "full": "Food Truck Findr Extension"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "4766751f-3330-4387-ad19-868c831b12f8",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "foodTruckExpanderAction",
+          "type": "action",
+          "title": "Food Truck Expander",
+          "description": "Find a tasty food truck.",
+          "context": [
+            "compose",
+            "message"
+          ],
+          "fetchTask": true
+        },
+        {
+          "id": "foodTruckExpanderSearch",
+          "type": "query",
+          "title": "Food Truck Lookup",
+          "description": "Search for a food truck.",
+          "context": ["compose"],
+          "parameters": [{
+            "name": "searchKeyword",
+            "description": "Enter the name or location of a food truck",
+            "title": "Food Truck"
+          }]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ]
+}

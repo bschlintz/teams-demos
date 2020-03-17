@@ -1,0 +1,64 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "id": "cardHeader",
+      "type": "Container",
+      "items": [
+        {
+          "id": "foodTruckName",
+          "type": "TextBlock",
+          "weight": "bolder",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "id": "cardBody",
+      "items": [
+        {
+          "id": "foodTruckDetails",
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "250",
+              "items": [
+                {
+                  "type": "FactSet",
+                  "facts": [
+                    {
+                      "id": "likes",
+                      "title": "Likes:"
+                    },
+                    {
+                      "id": "sweet",
+                      "title": "Is Sweet:"
+                    },
+                    {
+                      "id": "savory",
+                      "title": "Is Savory:"
+                    },
+                    {
+                      "id": "vegetarian",
+                      "title": "Is Vegetarian:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Read Yelp Reviews"
+    }
+  ]
+}
