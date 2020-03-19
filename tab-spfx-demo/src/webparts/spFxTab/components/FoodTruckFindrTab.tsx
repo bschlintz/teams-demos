@@ -84,7 +84,7 @@ export default class FoodTruckFindrTab extends React.Component<IFoodTruckFindrTa
                         sweet: ft.sweet ? "Yes" : "No",
                         savory: ft.savory ? "Yes" : "No",
                         vegetarian: ft.vegetarian ? "Yes" : "No",
-                    }
+                    };
                 })}
             />
         );

@@ -20,7 +20,7 @@ export const locations: IPropertyPaneDropdownOption[] = [
   { key: 'Denver, CO', text: 'Denver, CO' },
   { key: 'Portland, OR', text: 'Portland, OR' },
   { key: 'Seattle, WA', text: 'Seattle, WA' },
-]
+];
 
 export default class SpFxTabWebPart extends BaseClientSideWebPart <ISpFxTabWebPartProps> {
 
