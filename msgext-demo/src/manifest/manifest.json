@@ -38,7 +38,6 @@
           "title": "Food Truck Expander",
           "description": "Find a tasty food truck.",
           "context": [
-            "compose",
             "message"
           ],
           "fetchTask": true
@@ -48,7 +47,10 @@
           "type": "query",
           "title": "Food Truck Lookup",
           "description": "Search for a food truck.",
-          "context": ["compose"],
+          "context": [
+            "compose",
+            "commandBox"
+          ],
           "parameters": [{
             "name": "searchKeyword",
             "description": "Enter the name or location of a food truck",
